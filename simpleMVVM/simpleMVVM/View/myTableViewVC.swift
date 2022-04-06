@@ -64,7 +64,8 @@ class myTableViewVC : UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
         
-        viewModel.initFetch()
+//        viewModel.initFetch()
+        viewModel.initBeerFetch()
     }
     
     
@@ -79,7 +80,7 @@ class myTableViewVC : UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if (tableView == nil) {
             tableView = UITableView(frame: self.view.frame, style: .plain)
-            tableView?.backgroundColor = UIColor.green
+//            tableView?.backgroundColor = UIColor.green
             tableView?.delegate = self
             tableView?.dataSource = self
             tableView?.register(myTableViewCell.self, forCellReuseIdentifier: "cellClass")
@@ -91,7 +92,7 @@ class myTableViewVC : UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func showAlert(msg: String? = "HelloHa") {
-        let alert = UIAlertController.init(title: "Title", message: msg, preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController.init(title: nil, message: msg, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }

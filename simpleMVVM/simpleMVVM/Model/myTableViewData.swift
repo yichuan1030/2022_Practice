@@ -21,6 +21,12 @@ struct itemData : Codable {
     var image_url : String?
 }
 
+// MARK: Server Beer Data
+struct beerData : Codable {
+    var id : String?
+    var name : String?
+}
+
 // MARK: UI cell Data
 struct tableViewCellData : Codable {
     var title : String? // name

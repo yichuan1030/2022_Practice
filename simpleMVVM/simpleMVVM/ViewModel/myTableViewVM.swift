@@ -20,6 +20,7 @@ class myTableViewVM : NSObject {
     }
     
     var serverData : [itemData] = [itemData]()
+    var serverBeerData : [beerData] = [beerData]()
     var tableViewData : [tableViewCellData] = [tableViewCellData]()
     
     
@@ -41,6 +42,21 @@ class myTableViewVM : NSObject {
         }
         
     }
+    
+    func initBeerFetch() {
+        self.isLoading = true
+        
+        apiSvc.fetchBearServerData(complete: { [weak self] (success, uData, err) in
+            self?.isLoading = false
+            if let err = err {
+                self?.showAlertClosure?("error")
+            }else{
+                self?.processFetchedData(uData)
+            }
+        })
+        
+    }
+    
     // MARK: Public API
     func processFetchedData(_ data : [itemData]) {
         serverData = data
@@ -53,6 +69,24 @@ class myTableViewVM : NSObject {
             tableData.content = item.description
             tableData.url = item.image_url
             tableData.img = item.image_url
+            
+            tableDataArr.append(tableData)
+        }
+        tableViewData = tableDataArr
+        self.reloadTableViewClosure?()
+    }
+    
+    func processFetchedData(_ data : [beerData]) {
+        serverBeerData = data
+        
+        var tableDataArr = [tableViewCellData]()
+        for item in data {
+            
+            var tableData = tableViewCellData()
+            tableData.title = item.name
+            tableData.content = item.id
+//            tableData.url = item.image_url
+            tableData.img = catUrl
             
             tableDataArr.append(tableData)
         }
