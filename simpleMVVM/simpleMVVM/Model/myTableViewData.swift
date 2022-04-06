@@ -1,17 +1,17 @@
 //
-//  myTableViewCellData.swift
+//  myTableViewData.swift
 //  simpleMVVM
 //
 //  Created by raymondwang on 2022/3/29.
 //
 
 import Foundation
+import UIKit
 
-
+// MARK: Server Data
 struct serverData : Codable {
     var userData: [itemData]
 }
-
 
 struct itemData : Codable {
     var id : String?
@@ -21,9 +21,11 @@ struct itemData : Codable {
     var image_url : String?
 }
 
-//struct tableViewCellData : Codable {
-//    var title : String?
-//    var content : String?
-//    var url : String?
-//    var img : String?
-//}
+// MARK: UI cell Data
+struct tableViewCellData : Codable {
+    var title : String? // name
+    var content : String? // desc
+    var url : String? // imgUrl
+    var img : String? // imgUrl
+}
+

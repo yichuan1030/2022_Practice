@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44A4B0AD27F1A2C6008621DA /* SomeDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4B0AC27F1A2C6008621DA /* SomeDataBase.swift */; };
+		44A4B0B427F1AAF2008621DA /* myTableViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4B0B327F1AAF2008621DA /* myTableViewVM.swift */; };
 		44E88F7827E8192200B4EED1 /* simpleMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E88F7727E8192200B4EED1 /* simpleMVVMApp.swift */; };
 		44E88F7A27E8192200B4EED1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E88F7927E8192200B4EED1 /* ContentView.swift */; };
 		44E88F7C27E8192600B4EED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E88F7B27E8192600B4EED1 /* Assets.xcassets */; };
 		44E88F7F27E8192600B4EED1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E88F7E27E8192600B4EED1 /* Preview Assets.xcassets */; };
+		44EFA2C027F2E34A0001FBBC /* myTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EFA2BF27F2E34A0001FBBC /* myTableViewData.swift */; };
+		44EFA2CD27F2E7D10001FBBC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EFA2CC27F2E7D10001FBBC /* APIService.swift */; };
+		44EFA2CF27F2EA890001FBBC /* serverData.json in Sources */ = {isa = PBXBuildFile; fileRef = 44EFA2CE27F2EA890001FBBC /* serverData.json */; };
+		44EFA2D127F2F58B0001FBBC /* myTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EFA2D027F2F58B0001FBBC /* myTableViewVC.swift */; };
+		44EFA2D327F30A5F0001FBBC /* myView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EFA2D227F30A5F0001FBBC /* myView.swift */; };
+		44EFA2D427F433510001FBBC /* serverData.json in Resources */ = {isa = PBXBuildFile; fileRef = 44EFA2CE27F2EA890001FBBC /* serverData.json */; };
+		44EFA30B27F829650001FBBC /* myTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EFA30A27F829640001FBBC /* myTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44A4B0AC27F1A2C6008621DA /* SomeDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeDataBase.swift; sourceTree = "<group>"; };
+		44A4B0B327F1AAF2008621DA /* myTableViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewVM.swift; sourceTree = "<group>"; };
 		44E88F7427E8192200B4EED1 /* simpleMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E88F7727E8192200B4EED1 /* simpleMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleMVVMApp.swift; sourceTree = "<group>"; };
 		44E88F7927E8192200B4EED1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44E88F7B27E8192600B4EED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44E88F7E27E8192600B4EED1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44EFA2BF27F2E34A0001FBBC /* myTableViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewData.swift; sourceTree = "<group>"; };
+		44EFA2CC27F2E7D10001FBBC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		44EFA2CE27F2EA890001FBBC /* serverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = serverData.json; sourceTree = "<group>"; };
+		44EFA2D027F2F58B0001FBBC /* myTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewVC.swift; sourceTree = "<group>"; };
+		44EFA2D227F30A5F0001FBBC /* myView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myView.swift; sourceTree = "<group>"; };
+		44EFA30A27F829640001FBBC /* myTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44A4B0AE27F1AAA5008621DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44EFA2BF27F2E34A0001FBBC /* myTableViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44A4B0AF27F1AAB8008621DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44EFA2D027F2F58B0001FBBC /* myTableViewVC.swift */,
+				44EFA30A27F829640001FBBC /* myTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44A4B0B027F1AABF008621DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				44A4B0B327F1AAF2008621DA /* myTableViewVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		44E88F6B27E8192100B4EED1 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +93,13 @@
 		44E88F7627E8192200B4EED1 /* simpleMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				44EFA2BE27F2E3150001FBBC /* Service */,
+				44A4B0B027F1AABF008621DA /* ViewModel */,
+				44A4B0AF27F1AAB8008621DA /* View */,
+				44A4B0AE27F1AAA5008621DA /* Model */,
 				44E88F7727E8192200B4EED1 /* simpleMVVMApp.swift */,
 				44E88F7927E8192200B4EED1 /* ContentView.swift */,
+				44EFA2D227F30A5F0001FBBC /* myView.swift */,
 				44E88F7B27E8192600B4EED1 /* Assets.xcassets */,
 				44E88F7D27E8192600B4EED1 /* Preview Content */,
 			);
@@ -65,6 +112,16 @@
 				44E88F7E27E8192600B4EED1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44EFA2BE27F2E3150001FBBC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				44A4B0AC27F1A2C6008621DA /* SomeDataBase.swift */,
+				44EFA2CC27F2E7D10001FBBC /* APIService.swift */,
+				44EFA2CE27F2EA890001FBBC /* serverData.json */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44EFA2D427F433510001FBBC /* serverData.json in Resources */,
 				44E88F7F27E8192600B4EED1 /* Preview Assets.xcassets in Resources */,
 				44E88F7C27E8192600B4EED1 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44EFA2CD27F2E7D10001FBBC /* APIService.swift in Sources */,
+				44EFA2CF27F2EA890001FBBC /* serverData.json in Sources */,
+				44EFA30B27F829650001FBBC /* myTableViewCell.swift in Sources */,
+				44A4B0AD27F1A2C6008621DA /* SomeDataBase.swift in Sources */,
+				44A4B0B427F1AAF2008621DA /* myTableViewVM.swift in Sources */,
+				44EFA2C027F2E34A0001FBBC /* myTableViewData.swift in Sources */,
 				44E88F7A27E8192200B4EED1 /* ContentView.swift in Sources */,
+				44EFA2D127F2F58B0001FBBC /* myTableViewVC.swift in Sources */,
+				44EFA2D327F30A5F0001FBBC /* myView.swift in Sources */,
 				44E88F7827E8192200B4EED1 /* simpleMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
